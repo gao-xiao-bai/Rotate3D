@@ -11,8 +11,6 @@ This is the code of [Rotate3D](https://dl.acm.org/doi/abs/10.1145/3340531.341188
 
 [Explanation of the implementation](./implementation.pdf)
 
-We use the expression $\cos{\theta}\mathbf{v}+ (1-\cos{\theta})(\mathbf{v}\cdot\mathbf{u})\mathbf{u}+\sin{\theta}(\mathbf{u}\times\mathbf{v})​$ to implement Rotate3D. 
-
 ### Link Prediction
 
 To reproduce the results of Rotate3D, run the following commands.
