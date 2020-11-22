@@ -9,8 +9,7 @@ This is the code of [Rotate3D](https://dl.acm.org/doi/abs/10.1145/3340531.341188
 
 ### The implementation of Rotate3D
 
-$$
-\begin{aligned}
+$\begin{aligned}
 &\mathbf{v}_{\parallel} = (\mathbf{v}\cdot\mathbf{u})\mathbf{u} \\
 &\mathbf{v}_{\perp} = \mathbf{v} - \mathbf{v}_{\parallel} = \mathbf{v} - (\mathbf{v}\cdot\mathbf{u})\mathbf{u} \\
 &\mathbf{w}=\mathbf{u}\times\mathbf{v}_{\perp}=\mathbf{u}\times\mathbf{v} \\
@@ -18,10 +17,9 @@ $$
 		= & [\cos\frac{\theta}{2}, \sin\frac{\theta}{2}\mathbf{u}][0, \mathbf{v}][\cos\frac{\theta}{2}, -\sin\frac{\theta}{2}\mathbf{u}] \\ 
 		=&[0, \mathbf{v}_{\parallel}+\cos{\theta}\mathbf{v}_{\perp}+\sin{\theta}\mathbf{w}] \\ 
 		=& [0,\cos{\theta}\mathbf{v}+ (1-\cos{\theta})(\mathbf{v}\cdot\mathbf{u})\mathbf{u}+\sin{\theta}(\mathbf{u}\times\mathbf{v})]
-	\end{aligned}
-$$
+	\end{aligned}$
 
-We use the expression $\cos{\theta}\mathbf{v}+ (1-\cos{\theta})(\mathbf{v}\cdot\mathbf{u})\mathbf{u}+\sin{\theta}(\mathbf{u}\times\mathbf{v})$ to implement Rotate3D. 
+We use the expression $\cos{\theta}\mathbf{v}+ (1-\cos{\theta})(\mathbf{v}\cdot\mathbf{u})\mathbf{u}+\sin{\theta}(\mathbf{u}\times\mathbf{v})​$ to implement Rotate3D. 
 
 ### Link Prediction
 
